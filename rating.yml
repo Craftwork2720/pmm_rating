@@ -1,41 +1,4 @@
 templates:
-  Streaming:
-    optional:
-      - overlay_level
-      - use_<<slug>>
-    default:
-      overlay: <<overlay_name>>
-      horizontal_offset: 25
-      horizontal_align: left
-      vertical_offset: 25
-      vertical_align: top
-    allowed_library_types: <<use_<<slug>>>>
-    ignore_blank_results: true
-    overlay:
-      name: <<overlay_name>>
-      file: config/overlays/streaming/<<overlay>>.png
-      group: streaming
-      weight: <<weight>>
-      horizontal_offset: <<horizontal_offset>>
-      horizontal_align: <<horizontal_align>>
-      vertical_offset: <<vertical_offset>>
-      vertical_align: <<vertical_align>>
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/<<slug>>-movies
-    
-
-overlays:
-#  Netflix:
-#    template:
-#      - name: Streaming
-#        weight: 200
-#        slug: netflix
-
-  Amazon_Prime_Video:
-    template:
-      - name: Streaming
-        weight: 190
-        slug: amazon
-
   rating_highest:
     overlay:
       font_color: "#74AB61"
@@ -123,15 +86,3 @@ overlays:
       all:
         critic_rating.gte: 0.1
         critic_rating.lte: 4.4
-        
-  4K:
-    overlay:
-      name: 4K
-      horizontal_offset: 0
-      horizontal_align: left
-      vertical_offset: 0
-      vertical_align: top
-      file: config/overlays/4K/4K.png
-    plex_search:
-      any:
-        resolution: 4K
