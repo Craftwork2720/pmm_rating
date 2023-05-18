@@ -1,4 +1,4 @@
-# pmm_rating
+# pmm_rating for Movies/TV Shows
 Super fast rating for movies and tv, 4 colors, easy to edit
 
 
